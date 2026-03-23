@@ -1,0 +1,72 @@
+{
+  "en": {
+    "nav": {
+      "gallery": "Gallery",
+      "about": "About",
+      "contact": "Contact",
+      "brand": "Portfolio"
+    },
+    "home": {
+      "title": "Selected Works",
+      "subtitle": "A curated collection of projects exploring light, form, and narrative."
+    },
+    "project": {
+      "notFoundTitle": "Project Not Found",
+      "notFoundLink": "Return to Gallery",
+      "backToGallery": "Back to Gallery",
+      "moreProjects": "More Projects"
+    },
+    "about": {
+      "title": "About",
+      "bio": [
+        "I'm a photographer driven by curiosity and a deep respect for light. Over the past decade, my work has taken me from quiet forest trails to the busiest intersections of the world's great cities — always searching for that moment where subject, light, and emotion align.",
+        "My approach is deliberate: I favour natural light, minimal post-processing, and compositions that give the eye room to breathe. Whether I'm shooting architecture or portraiture, I want each image to feel like a pause — a still point in a moving world.",
+        "When I'm not behind the lens, I teach workshops on visual storytelling and contribute to independent publications exploring the intersection of art and everyday life."
+      ]
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "subtitle": "Interested in working together? I'd love to hear from you. Reach out through any of the channels below.",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "footer": {
+      "rights": "All rights reserved."
+    }
+  },
+  "he": {
+    "nav": {
+      "gallery": "גלריה",
+      "about": "אודות",
+      "contact": "צור קשר",
+      "brand": "פורטפוליו"
+    },
+    "home": {
+      "title": "עבודות נבחרות",
+      "subtitle": "אוסף מאוצר של פרויקטים החוקרים אור, צורה וסיפור."
+    },
+    "project": {
+      "notFoundTitle": "הפרויקט לא נמצא",
+      "notFoundLink": "חזרה לגלריה",
+      "backToGallery": "חזרה לגלריה",
+      "moreProjects": "פרויקטים נוספים"
+    },
+    "about": {
+      "title": "אודות",
+      "bio": [
+        "אני צלם שמונע מסקרנות וכבוד עמוק לאור. במהלך העשור האחרון, העבודה שלי לקחה אותי משבילי יער שקטים לצמתים העמוסים ביותר בערים הגדולות בעולם — תמיד מחפש את הרגע שבו נושא, אור ורגש נפגשים.",
+        "הגישה שלי מכוונת: אני מעדיף אור טבעי, עיבוד מינימלי וקומפוזיציות שנותנות לעין מרחב לנשום. בין אם אני מצלם אדריכלות או דיוקנאות, אני רוצה שכל תמונה תרגיש כמו עצירה — נקודת שקט בעולם נע.",
+        "כשאני לא מאחורי העדשה, אני מלמד סדנאות סיפור חזותי ותורם לפרסומים עצמאיים החוקרים את הצומת שבין אמנות לחיי היומיום."
+      ]
+    },
+    "contact": {
+      "title": "צור קשר",
+      "subtitle": "מעוניינים לעבוד יחד? אשמח לשמוע מכם. פנו אליי באחד מהערוצים למטה.",
+      "email": "אימייל",
+      "phone": "טלפון"
+    },
+    "footer": {
+      "rights": "כל הזכויות שמורות."
+    }
+  }
+}
