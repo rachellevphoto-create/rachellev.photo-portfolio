@@ -28,6 +28,6 @@ export function getLocalizedProjects(lang: Lang): Project[] {
     title: lang === 'he' ? p.title_he : p.title,
     category: lang === 'he' ? p.category_he : p.category,
     description: lang === 'he' ? p.description_he : p.description,
-    coverImage: p.coverImage,
+    coverImage: p.coverImage.startsWith('http') ? p.coverImage : `${import.meta.env.BASE_URL}${p.coverImage}`,
   }));
 }

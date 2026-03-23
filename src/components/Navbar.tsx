@@ -33,7 +33,7 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 md:px-10">
         <Link to="/" className="block overflow-hidden" style={{ width: 140, height: 48 }}>
           <img
-            src={theme === 'dark' ? '/images/logo-darkmode.png' : '/images/logo.png'}
+            src={`${import.meta.env.BASE_URL}images/${theme === 'dark' ? 'logo-darkmode.png' : 'logo.png'}`}
             alt={t.nav.brand}
             style={{ width: 140, height: 48, objectFit: 'contain' }}
           />

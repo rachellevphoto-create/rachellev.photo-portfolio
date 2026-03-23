@@ -70,6 +70,16 @@
     "coverImage": "https://picsum.photos/seed/mono1/800/1100"
   },
   {
+    "slug": "shadows-and-strength",
+    "title": "Shadows & Strength",
+    "title_he": "צללים ועוצמה",
+    "category": "Portrait",
+    "category_he": "דיוקן",
+    "description": "A low-key portrait study exploring the boundary between visibility and concealment. Dramatic chiaroscuro lighting carves the subject from total darkness, revealing quiet confidence and inner resolve in a single, unflinching gaze.",
+    "description_he": "מחקר דיוקן בתאורה נמוכה החוקר את הגבול בין נראות להסתרה. תאורת קיארוסקורו דרמטית מגלפת את הדמות מתוך חשכה מוחלטת, חושפת ביטחון שקט ונחישות פנימית במבט אחד בלתי מתפשר.",
+    "coverImage": "images/2101.jpg"
+  },
+  {
     "slug": "travel-journal",
     "title": "Travel Journal",
     "title_he": "יומן מסע",
