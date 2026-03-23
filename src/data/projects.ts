@@ -10,6 +10,7 @@ export interface ProjectRaw {
   description: string;
   description_he: string;
   coverImage: string;
+  images: string[];
 }
 
 export interface Project {
@@ -18,9 +19,14 @@ export interface Project {
   category: string;
   description: string;
   coverImage: string;
+  images: string[];
 }
 
 export const projectsRaw: ProjectRaw[] = projectsData;
+
+function resolveImageUrl(src: string): string {
+  return src.startsWith('http') ? src : `${import.meta.env.BASE_URL}${src}`;
+}
 
 export function getLocalizedProjects(lang: Lang): Project[] {
   return projectsRaw.map((p) => ({
@@ -28,6 +34,7 @@ export function getLocalizedProjects(lang: Lang): Project[] {
     title: lang === 'he' ? p.title_he : p.title,
     category: lang === 'he' ? p.category_he : p.category,
     description: lang === 'he' ? p.description_he : p.description,
-    coverImage: p.coverImage.startsWith('http') ? p.coverImage : `${import.meta.env.BASE_URL}${p.coverImage}`,
+    coverImage: resolveImageUrl(p.coverImage),
+    images: p.images.map(resolveImageUrl),
   }));
 }

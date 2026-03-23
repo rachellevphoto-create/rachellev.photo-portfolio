@@ -14,7 +14,8 @@
       "notFoundTitle": "Project Not Found",
       "notFoundLink": "Return to Gallery",
       "backToGallery": "Back to Gallery",
-      "moreProjects": "More Projects"
+      "moreProjects": "More Projects",
+      "moreFromCategory": "More From This Project"
     },
     "about": {
       "title": "About",
@@ -49,7 +50,8 @@
       "notFoundTitle": "הפרויקט לא נמצא",
       "notFoundLink": "חזרה לגלריה",
       "backToGallery": "חזרה לגלריה",
-      "moreProjects": "פרויקטים נוספים"
+      "moreProjects": "פרויקטים נוספים",
+      "moreFromCategory": "עוד מהפרויקט הזה"
     },
     "about": {
       "title": "אודות",

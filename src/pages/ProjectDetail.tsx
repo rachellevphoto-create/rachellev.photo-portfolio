@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { getLocalizedProjects } from '../data/projects';
 import GalleryItem from '../components/GalleryItem';
+import CategoryScroll from '../components/CategoryScroll';
 import { useLang } from '../i18n/LanguageContext';
 
 export default function ProjectDetail() {
@@ -62,6 +63,10 @@ export default function ProjectDetail() {
             {project.description}
           </p>
         </div>
+
+        {project.images.length > 0 && (
+          <CategoryScroll images={project.images} projectTitle={project.title} />
+        )}
 
         {otherProjects.length > 0 && (
           <section className="mt-20">
