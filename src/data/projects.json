@@ -1,21 +1,5 @@
 [
   {
-    "slug": "golden-hour-portraits",
-    "title": "Golden Hour Portraits",
-    "title_he": "דיוקנאות שעת הזהב",
-    "category": "Portrait",
-    "category_he": "דיוקן",
-    "description": "A series of intimate portraits captured during the fleeting moments of golden hour. The warm, diffused light wraps around each subject, creating an ethereal glow that reveals vulnerability and quiet strength in equal measure.",
-    "description_he": "סדרת דיוקנאות אינטימיים שצולמו ברגעים חולפים של שעת הזהב. האור החם והמפוזר עוטף כל נושא, ויוצר זוהר אתרי שחושף פגיעות וכוח שקט כאחד.",
-    "coverImage": "https://picsum.photos/seed/golden1/800/1100",
-    "images": [
-      "https://picsum.photos/seed/golden2/800/1000",
-      "https://picsum.photos/seed/golden3/800/1100",
-      "https://picsum.photos/seed/golden4/800/900",
-      "https://picsum.photos/seed/golden5/800/1000"
-    ]
-  },
-  {
     "slug": "urban-geometry",
     "title": "Urban Geometry",
     "title_he": "גיאומטריה עירונית",

@@ -13,6 +13,7 @@ export default function CategoryScroll({ images, projectTitle }: CategoryScrollP
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
+  const [fitsInView, setFitsInView] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const updateScrollState = useCallback(() => {
@@ -21,6 +22,7 @@ export default function CategoryScroll({ images, projectTitle }: CategoryScrollP
     const tolerance = 2;
     setCanScrollLeft(el.scrollLeft > tolerance);
     setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - tolerance);
+    setFitsInView(el.scrollWidth <= el.clientWidth + tolerance);
   }, []);
 
   useEffect(() => {
@@ -96,21 +98,21 @@ export default function CategoryScroll({ images, projectTitle }: CategoryScrollP
 
           <div
             ref={scrollRef}
-            className="scrollbar-hide flex gap-4 overflow-x-auto overflow-y-hidden px-8"
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', height: 180 }}
+            className={`scrollbar-hide flex gap-4 overflow-x-auto overflow-y-hidden px-8${fitsInView ? ' justify-center' : ''}`}
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', height: 240 }}
           >
             {images.map((src, i) => (
               <button
                 key={i}
                 onClick={() => setLightboxIndex(i)}
                 className="shrink-0 cursor-pointer border-0 bg-transparent p-0 overflow-hidden rounded-sm"
-                style={{ height: 180, maxHeight: 180 }}
+                style={{ height: 240, maxHeight: 240 }}
               >
                 <img
                   src={src}
                   alt={`${projectTitle} ${i + 1}`}
                   loading="lazy"
-                  style={{ height: 180, width: 'auto', objectFit: 'cover' }}
+                  style={{ height: 240, width: 'auto', objectFit: 'cover' }}
                   className="transition-transform duration-300 hover:scale-105"
                 />
               </button>

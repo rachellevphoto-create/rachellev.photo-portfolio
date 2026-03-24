@@ -16,8 +16,8 @@ export default function Contact() {
     {
       icon: Phone,
       label: t.contact.phone,
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '(+972)-55-672-0636',
+      href: 'tel:+972556720636',
     },
   ];
 
