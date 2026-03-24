@@ -120,7 +120,10 @@
     "description": "A low-key portrait study exploring the boundary between visibility and concealment. Dramatic chiaroscuro lighting carves the subject from total darkness, revealing quiet confidence and inner resolve in a single, unflinching gaze.",
     "description_he": "מחקר דיוקן בתאורה נמוכה החוקר את הגבול בין נראות להסתרה. תאורת קיארוסקורו דרמטית מגלפת את הדמות מתוך חשכה מוחלטת, חושפת ביטחון שקט ונחישות פנימית במבט אחד בלתי מתפשר.",
     "coverImage": "images/2101.jpg",
-    "images": []
+    "images": [
+      "images/2180.jpg",
+      "images/2198.jpg"
+    ]
   },
   {
     "slug": "travel-journal",
@@ -184,6 +187,33 @@
       "images/8801.jpg",
       "images/9154.jpg",
       "images/9181.jpg"
+    ]
+  },
+  {
+    "slug": "bokeh-portraits",
+    "title": "Bokeh Portraits",
+    "title_he": "דיוקנאות בוקה",
+    "category": "Portrait",
+    "category_he": "דיוקן",
+    "description": "A contemplative portrait study bathed in warm bokeh light. Soft golden orbs float in the background, drawing the viewer's focus to the subject's quiet, introspective gaze against a dreamlike canvas of color.",
+    "description_he": "מחקר דיוקן מהורהר שטוף באור בוקה חם. כדורים זהובים רכים מרחפים ברקע, ומושכים את מבט הצופה אל המבט השקט והמופנם של הדמות על רקע קנבס חלומי של צבע.",
+    "coverImage": "images/1111.png",
+    "images": [
+      "images/1112.png"
+    ]
+  },
+  {
+    "slug": "emerald-and-crimson",
+    "title": "Emerald & Crimson",
+    "title_he": "אמרלד וארגמן",
+    "category": "Portrait",
+    "category_he": "דיוקן",
+    "description": "A refined studio portrait series set against a deep emerald backdrop. Rich crimson tones in the subject's attire create a painterly contrast, evoking the elegance and poise of classical portraiture.",
+    "description_he": "סדרת דיוקנאות סטודיו מעודנת על רקע אמרלד עמוק. גוונים ארגמניים עשירים בלבוש הדמות יוצרים ניגודיות ציורית, המעוררת את האלגנטיות והיציבות של דיוקנאות קלאסית.",
+    "coverImage": "images/6015.jpg",
+    "images": [
+      "images/6014.jpg",
+      "images/5982.jpg"
     ]
   }
 ]

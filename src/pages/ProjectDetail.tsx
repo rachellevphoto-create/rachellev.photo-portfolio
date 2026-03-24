@@ -1,6 +1,7 @@
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { ArrowLeft, ArrowRight, X } from 'lucide-react';
 import { getLocalizedProjects } from '../data/projects';
 import GalleryItem from '../components/GalleryItem';
 import CategoryScroll from '../components/CategoryScroll';
@@ -12,6 +13,20 @@ export default function ProjectDetail() {
   const projects = getLocalizedProjects(lang);
   const project = projects.find((p) => p.slug === slug);
   const otherProjects = projects.filter((p) => p.slug !== slug);
+  const [showCoverLightbox, setShowCoverLightbox] = useState(false);
+
+  useEffect(() => {
+    if (!showCoverLightbox) return;
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setShowCoverLightbox(false);
+    };
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', handleKey);
+    return () => {
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', handleKey);
+    };
+  }, [showCoverLightbox]);
 
   const BackArrow = lang === 'he' ? ArrowRight : ArrowLeft;
 
@@ -48,7 +63,8 @@ export default function ProjectDetail() {
           <img
             src={project.coverImage}
             alt={project.title}
-            className="mx-auto w-full max-w-4xl object-cover"
+            className="mx-auto w-full max-w-4xl cursor-pointer object-cover transition-transform duration-300 hover:scale-[1.02]"
+            onClick={() => setShowCoverLightbox(true)}
           />
         </div>
 
@@ -81,6 +97,38 @@ export default function ProjectDetail() {
           </section>
         )}
       </div>
+
+      <AnimatePresence>
+        {showCoverLightbox && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90"
+            onClick={() => setShowCoverLightbox(false)}
+          >
+            <button
+              onClick={() => setShowCoverLightbox(false)}
+              className="absolute top-4 right-4 z-50 flex h-10 w-10 items-center justify-center rounded-full text-white/80 transition-colors hover:text-white"
+              aria-label="Close"
+            >
+              <X size={24} />
+            </button>
+
+            <motion.img
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.2 }}
+              src={project.coverImage}
+              alt={project.title}
+              className="max-h-[85vh] max-w-[90vw] rounded-sm object-contain"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 }
