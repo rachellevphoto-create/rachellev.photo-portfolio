@@ -137,5 +137,34 @@
       "https://picsum.photos/seed/travel4/800/800",
       "https://picsum.photos/seed/travel5/800/500"
     ]
+  },
+  {
+    "slug": "winter-gaze",
+    "title": "Winter Gaze",
+    "title_he": "מבט חורפי",
+    "category": "Portrait",
+    "category_he": "דיוקן",
+    "description": "A striking close-up portrait framed by a white fur hat and wind-tossed golden hair. The subject's piercing green eyes and bold lip create a captivating contrast against the soft, wintry textures.",
+    "description_he": "דיוקן תקריב מרשים הממוסגר בכובע פרווה לבן ושיער זהוב שנסחף ברוח. עיניה הירוקות החודרות של הדמות והשפתיים הנועזות יוצרים ניגודיות מרתקת מול המרקמים הרכים והחורפיים.",
+    "coverImage": "images/7695.jpg",
+    "images": []
+  },
+  {
+    "slug": "among-the-branches",
+    "title": "Among the Branches",
+    "title_he": "בין הענפים",
+    "category": "Portrait",
+    "category_he": "דיוקן",
+    "description": "A candid portrait series set among sun-dappled trees. Lush green foliage frames each subject, blending youthful spontaneity with the quiet beauty of the natural world.",
+    "description_he": "סדרת דיוקנאות קנדידית בין עצים מנוקדי שמש. עלווה ירוקה ושופעת ממסגרת כל דמות, ומשלבת ספונטניות נעורים עם היופי השקט של העולם הטבעי.",
+    "coverImage": "images/9029.jpg",
+    "images": [
+      "images/8868.jpg",
+      "images/8890.jpg",
+      "images/8963.jpg",
+      "images/8979.jpg",
+      "images/9024.jpg",
+      "images/9041.jpg"
+    ]
   }
 ]
