@@ -199,5 +199,22 @@
       "images/6014.jpg",
       "images/5982.jpg"
     ]
+  },
+  {
+    "slug": "quiet-moments",
+    "title": "Quiet Moments",
+    "title_he": "רגעים שקטים",
+    "category": "Portrait",
+    "category_he": "דיוקן",
+    "description": "A portrait series capturing unguarded, reflective moments. Soft natural light and understated compositions draw focus to subtle expression and the quiet beauty found in stillness.",
+    "description_he": "סדרת דיוקנאות הלוכדת רגעים לא שמורים ומהורהרים. אור טבעי רך וקומפוזיציות מאופקות מפנים את המיקוד להבעה עדינה וליופי השקט שבדממה.",
+    "coverImage": "images/2277.JPG",
+    "images": [
+      "images/2217.JPG",
+      "images/2215.JPG",
+      "images/2225.JPG",
+      "images/2248.JPG",
+      "images/2271.JPG"
+    ]
   }
 ]
