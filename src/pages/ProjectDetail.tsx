@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight, X } from 'lucide-react';
 import { getLocalizedProjects } from '../data/projects';
-import GalleryItem from '../components/GalleryItem';
+import MasonryGrid from '../components/MasonryGrid';
 import CategoryScroll from '../components/CategoryScroll';
 import { useLang } from '../i18n/LanguageContext';
 
@@ -89,11 +89,7 @@ export default function ProjectDetail() {
             <h2 className="mb-10 text-center font-serif text-2xl font-medium text-teal-dark dark:text-offwhite">
               {t.project.moreProjects}
             </h2>
-            <div className="columns-1 gap-8 sm:columns-2 lg:columns-3">
-              {otherProjects.map((p, i) => (
-                <GalleryItem key={p.slug} project={p} index={i} />
-              ))}
-            </div>
+            <MasonryGrid projects={otherProjects} />
           </section>
         )}
       </div>

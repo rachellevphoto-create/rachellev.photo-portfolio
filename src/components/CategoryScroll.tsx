@@ -31,9 +31,13 @@ export default function CategoryScroll({ images, projectTitle }: CategoryScrollP
     if (!el) return;
     el.addEventListener('scroll', updateScrollState, { passive: true });
     window.addEventListener('resize', updateScrollState);
+    const ro = new ResizeObserver(updateScrollState);
+    ro.observe(el);
+    for (const child of el.children) ro.observe(child);
     return () => {
       el.removeEventListener('scroll', updateScrollState);
       window.removeEventListener('resize', updateScrollState);
+      ro.disconnect();
     };
   }, [updateScrollState]);
 

@@ -1,101 +1,5 @@
 [
   {
-    "slug": "urban-geometry",
-    "title": "Urban Geometry",
-    "title_he": "גיאומטריה עירונית",
-    "category": "Architecture",
-    "category_he": "אדריכלות",
-    "description": "Exploring the hidden symmetry in urban landscapes. Lines, angles, and reflections converge to form abstract compositions that challenge the way we perceive the built environment around us.",
-    "description_he": "חקירת הסימטריה הנסתרת בנופים עירוניים. קווים, זוויות והשתקפויות מתכנסים ליצירת קומפוזיציות מופשטות המאתגרות את הדרך שבה אנו תופסים את הסביבה הבנויה סביבנו.",
-    "coverImage": "https://picsum.photos/seed/urban1/800/600",
-    "images": [
-      "https://picsum.photos/seed/urban2/800/600",
-      "https://picsum.photos/seed/urban3/800/700",
-      "https://picsum.photos/seed/urban4/800/600",
-      "https://picsum.photos/seed/urban5/800/500"
-    ]
-  },
-  {
-    "slug": "silent-forests",
-    "title": "Silent Forests",
-    "title_he": "יערות שקטים",
-    "category": "Landscape",
-    "category_he": "נוף",
-    "description": "Deep within ancient woodlands, silence becomes almost tangible. These images seek to capture that stillness — the interplay of mist, moss, and filtered light that makes the forest feel like a cathedral.",
-    "description_he": "עמוק ביערות עתיקים, השקט הופך כמעט מוחשי. תמונות אלו מבקשות ללכוד את הדממה — משחק הגומלין בין ערפל, טחב ואור מסונן שגורם ליער להרגיש כמו קתדרלה.",
-    "coverImage": "https://picsum.photos/seed/forest1/800/1000",
-    "images": [
-      "https://picsum.photos/seed/forest2/800/900",
-      "https://picsum.photos/seed/forest3/800/1000",
-      "https://picsum.photos/seed/forest4/800/800",
-      "https://picsum.photos/seed/forest5/800/1100"
-    ]
-  },
-  {
-    "slug": "coastal-erosion",
-    "title": "Coastal Erosion",
-    "title_he": "שחיקת חופים",
-    "category": "Landscape",
-    "category_he": "נוף",
-    "description": "The relentless dance between sea and shore, captured in long exposures that blur the boundary between water and stone. Each frame tells the story of millennia compressed into a single, meditative moment.",
-    "description_he": "הריקוד הבלתי פוסק בין ים וחוף, נלכד בחשיפות ארוכות המטשטשות את הגבול בין מים לאבן. כל פריים מספר סיפור של אלפי שנים דחוסות לרגע מדיטטיבי אחד.",
-    "coverImage": "https://picsum.photos/seed/coast1/800/800",
-    "images": [
-      "https://picsum.photos/seed/coast2/800/700",
-      "https://picsum.photos/seed/coast3/800/800",
-      "https://picsum.photos/seed/coast4/800/900",
-      "https://picsum.photos/seed/coast5/800/700"
-    ]
-  },
-  {
-    "slug": "studio-minimalism",
-    "title": "Studio Minimalism",
-    "title_he": "מינימליזם סטודיו",
-    "category": "Still Life",
-    "category_he": "טבע דומם",
-    "description": "Stripped-down compositions that celebrate form, texture, and negative space. Objects are freed from context and placed into carefully controlled light, revealing beauty in the most ordinary things.",
-    "description_he": "קומפוזיציות מופשטות החוגגות צורה, מרקם וחלל שלילי. חפצים משוחררים מהקשרם ומוצבים באור מבוקר בקפידה, חושפים יופי בדברים הרגילים ביותר.",
-    "coverImage": "https://picsum.photos/seed/studio1/800/900",
-    "images": [
-      "https://picsum.photos/seed/studio2/800/800",
-      "https://picsum.photos/seed/studio3/800/900",
-      "https://picsum.photos/seed/studio4/800/700",
-      "https://picsum.photos/seed/studio5/800/900"
-    ]
-  },
-  {
-    "slug": "street-stories",
-    "title": "Street Stories",
-    "title_he": "סיפורי רחוב",
-    "category": "Street",
-    "category_he": "רחוב",
-    "description": "Unscripted moments from the pulse of the city. These candid frames catch fleeting expressions, unexpected juxtapositions, and the beautiful chaos of everyday life unfolding on the sidewalk.",
-    "description_he": "רגעים לא מתוסרטים מדופק העיר. פריימים קנדידיים אלו לוכדים הבעות חולפות, הצבות בלתי צפויות, והכאוס היפה של חיי היומיום המתגלגלים על המדרכה.",
-    "coverImage": "https://picsum.photos/seed/street1/800/700",
-    "images": [
-      "https://picsum.photos/seed/street2/800/600",
-      "https://picsum.photos/seed/street3/800/700",
-      "https://picsum.photos/seed/street4/800/800",
-      "https://picsum.photos/seed/street5/800/600"
-    ]
-  },
-  {
-    "slug": "monochrome-moods",
-    "title": "Monochrome Moods",
-    "title_he": "מצבי רוח מונוכרום",
-    "category": "Fine Art",
-    "category_he": "אמנות",
-    "description": "Stripping away color to expose the raw essence of light and shadow. These black-and-white compositions draw the eye to contrast, texture, and emotion that color sometimes conceals.",
-    "description_he": "הסרת צבע לחשיפת המהות הגולמית של אור וצל. קומפוזיציות שחור-לבן אלו מושכות את העין לניגודיות, מרקם ורגש שהצבע לעיתים מסתיר.",
-    "coverImage": "https://picsum.photos/seed/mono1/800/1100",
-    "images": [
-      "https://picsum.photos/seed/mono2/800/1000",
-      "https://picsum.photos/seed/mono3/800/1100",
-      "https://picsum.photos/seed/mono4/800/900",
-      "https://picsum.photos/seed/mono5/800/1000"
-    ]
-  },
-  {
     "slug": "shadows-and-strength",
     "title": "Shadows & Strength",
     "title_he": "צללים ועוצמה",
@@ -107,22 +11,6 @@
     "images": [
       "images/2180.jpg",
       "images/2198.jpg"
-    ]
-  },
-  {
-    "slug": "travel-journal",
-    "title": "Travel Journal",
-    "title_he": "יומן מסע",
-    "category": "Documentary",
-    "category_he": "דוקומנטרי",
-    "description": "Visual entries from journeys across continents. More than postcards, these images capture the textures, rhythms, and quiet details of places that linger in memory long after the journey ends.",
-    "description_he": "רשומות חזותיות ממסעות ברחבי יבשות. יותר מגלויות, תמונות אלו לוכדות את המרקמים, הקצבים והפרטים השקטים של מקומות שנשארים בזיכרון זמן רב לאחר שהמסע מסתיים.",
-    "coverImage": "https://picsum.photos/seed/travel1/800/600",
-    "images": [
-      "https://picsum.photos/seed/travel2/800/700",
-      "https://picsum.photos/seed/travel3/800/600",
-      "https://picsum.photos/seed/travel4/800/800",
-      "https://picsum.photos/seed/travel5/800/500"
     ]
   },
   {
@@ -215,6 +103,65 @@
       "images/2225.jpg",
       "images/2248.jpg",
       "images/2271.jpg"
+    ]
+  },
+  {
+    "slug": "lace-and-light",
+    "title": "Lace & Light",
+    "title_he": "תחרה ואור",
+    "category": "Portrait",
+    "category_he": "דיוקן",
+    "description": "An elegant portrait series celebrating the interplay of delicate white lace, crystal accessories, and soft luminous light. Intricate textures and pearl details are set against warm neutral drapes, creating an atmosphere of refined grace and timeless beauty.",
+    "description_he": "סדרת דיוקנאות אלגנטית החוגגת את משחק הגומלין בין תחרה לבנה עדינה, אביזרי קריסטל ואור רך וזוהר. מרקמים עדינים ופרטי פנינים ניצבים על רקע וילונות ניטרליים חמים, ויוצרים אווירה של חן מעודן ויופי נצחי.",
+    "coverImage": "images/0749.jpg",
+    "images": [
+      "images/0690.jpg",
+      "images/0707.jpg",
+      "images/07071.jpg",
+      "images/07491.jpg",
+      "images/0849.jpg",
+      "images/0908.jpg",
+      "images/0972.jpg",
+      "images/0990.jpg",
+      "images/1005.jpg",
+      "images/1143.jpg",
+      "images/1148.jpg",
+      "images/1156.jpg",
+      "images/1157.jpg"
+    ]
+  },
+  {
+    "slug": "circles-of-fire",
+    "title": "Circles of Fire",
+    "title_he": "מעגלי אש",
+    "category": "Fine Art",
+    "category_he": "אמנות",
+    "description": "Radiant circles and cascading sparks erupt against the night sky in these long-exposure captures. Light traces sweeping arcs through the darkness, freezing a fleeting spectacle into luminous constellations of motion and energy.",
+    "description_he": "מעגלים זוהרים וניצוצות מתפזרים על רקע שמי הלילה בצילומי חשיפה ארוכה אלו. האור מתווה קשתות סוחפות בחשכה, וקופא רגע חולף לקבוצות כוכבים זוהרות של תנועה ואנרגיה.",
+    "coverImage": "images/0121.jpg",
+    "images": [
+      "images/0046.jpg",
+      "images/0120.jpg",
+      "images/0135.jpg",
+      "images/0138.jpg"
+    ]
+  },
+  {
+    "slug": "sugar-and-sand",
+    "title": "Sugar & Sand",
+    "title_he": "סוכר וחול",
+    "category": "Portrait",
+    "category_he": "דיוקן",
+    "description": "A whimsical golden-hour session on the shore. Warm sunset light, playful props, and carefree expressions come together in a series that captures the magic of childhood against the soft hues of sea and sand.",
+    "description_he": "סשן שובב בשעת הזהב על שפת הים. אור שקיעה חם, אביזרים שובבים והבעות חסרות דאגות מתחברים יחד בסדרה הלוכדת את קסם הילדות על רקע הגוונים הרכים של ים וחול.",
+    "coverImage": "images/9586.jpg",
+    "images": [
+      "images/8895.jpg",
+      "images/8897.jpg",
+      "images/9008.jpg",
+      "images/9312.jpg",
+      "images/9501.jpg",
+      "images/9684.jpg"
     ]
   }
 ]
