@@ -163,5 +163,29 @@
       "images/9501.jpg",
       "images/9684.jpg"
     ]
+  },
+  {
+    "slug": "painted-in-motion",
+    "title": "Painted in Motion",
+    "title_he": "צבועות בתנועה",
+    "category": "Fine Art",
+    "category_he": "אמנות",
+    "description": "Dancers leap, twist, and arch through explosive clouds of colored powder against pure darkness. Each frame freezes a split-second collision of movement and color, turning the studio into a canvas of vivid pigment and raw kinetic energy.",
+    "description_he": "רקדניות קופצות, מסתובבות ומתקשתות בתוך ענני אבקת צבע נפיצים על רקע חשכה מוחלטת. כל פריים מקפיא רגע של התנגשות בין תנועה לצבע, והופך את הסטודיו לקנבס של פיגמנט חי ואנרגיה קינטית גולמית.",
+    "coverImage": "images/5081.jpg",
+    "images": [
+      "images/5059.jpg",
+      "images/5098.jpg",
+      "images/5080.jpg",
+      "images/5093.jpg",
+      "images/5099.jpg",
+      "images/5166.jpg",
+      "images/5269.jpg",
+      "images/8044.jpg",
+      "images/5103.jpg",
+      "images/8065.jpg",
+      "images/8049.jpg",
+      "images/8073.jpg"
+    ]
   }
 ]
