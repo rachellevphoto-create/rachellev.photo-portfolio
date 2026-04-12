@@ -187,5 +187,35 @@
       "images/8049.jpg",
       "images/8073.jpg"
     ]
+  },
+  {
+    "slug": "branding-photography",
+    "title": "Branding Photography",
+    "title_he": "צילום מיתוג",
+    "category": "Branding",
+    "category_he": "מיתוג",
+    "description": "A professional branding photography session crafted to capture authentic personality and brand identity. Carefully composed images blend polished styling with genuine expression, creating a visual story that connects and resonates.",
+    "description_he": "סשן צילום מיתוג מקצועי שנועד ללכוד אישיות אותנטית וזהות מותג. תמונות מורכבות בקפידה משלבות סטיילינג מלוטש עם הבעה אמיתית, ויוצרות סיפור ויזואלי שמחבר ומהדהד.",
+    "coverImage": "images/6361.jpg",
+    "images": [
+      "images/6062.jpg",
+      "images/6154.jpg",
+      "images/6204.jpg",
+      "images/6212.jpg",
+      "images/6217.jpg",
+      "images/6246.jpg",
+      "images/6266.jpg",
+      "images/6273.jpg",
+      "images/6284.jpg",
+      "images/6305.jpg",
+      "images/6323.jpg",
+      "images/6389.jpg",
+      "images/6407.jpg",
+      "images/6414.jpg",
+      "images/6434.jpg",
+      "images/6455.jpg",
+      "images/6477.jpg",
+      "images/6495.jpg"
+    ]
   }
 ]
