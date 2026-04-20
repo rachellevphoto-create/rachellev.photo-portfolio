@@ -217,5 +217,32 @@
       "images/6477.jpg",
       "images/6495.jpg"
     ]
+  },
+  {
+    "slug": "new-collection",
+    "title": "New Collection",
+    "title_he": "אוסף חדש",
+    "category": "Portrait",
+    "category_he": "דיוקן",
+    "description": "A fresh portrait series showcasing expression, light, and composition across varied frames. Each image contributes to a cohesive visual narrative while standing on its own as a studied moment.",
+    "description_he": "סדרת דיוקנאות חדשה המציגה הבעה, אור וקומפוזיציה במגוון פריימים. כל תמונה תורמת לסיפור ויזואלי עקבי ועומדת בפני עצמה כרגע מתוחקר.",
+    "coverImage": "images/5187.jpg",
+    "images": [
+      "images/5154.jpg",
+      "images/5189.jpg",
+      "images/5213.jpg",
+      "images/5191.jpg",
+      "images/5211.jpg",
+      "images/5185.jpg",
+      "images/5212.jpg",
+      "images/5186.jpg",
+      "images/5208.jpg",
+      "images/5183.jpg",
+      "images/5202.jpg",
+      "images/5221.jpg",
+      "images/5220.jpg",
+      "images/5198.jpg",
+      "images/5184.jpg"
+    ]
   }
 ]
