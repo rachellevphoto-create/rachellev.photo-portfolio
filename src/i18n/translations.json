@@ -15,7 +15,8 @@
       "notFoundLink": "Return to Gallery",
       "backToGallery": "Back to Gallery",
       "moreProjects": "More Projects",
-      "moreFromCategory": "More From This Project"
+      "moreFromCategory": "More From This Project",
+      "moreImages": "More images"
     },
     "about": {
       "title": "About",
@@ -50,7 +51,8 @@
       "notFoundLink": "חזרה לגלריה",
       "backToGallery": "חזרה לגלריה",
       "moreProjects": "פרויקטים נוספים",
-      "moreFromCategory": "עוד מהפרויקט הזה"
+      "moreFromCategory": "עוד מהפרויקט הזה",
+      "moreImages": "עוד תמונות"
     },
     "about": {
       "title": "אודות",
