@@ -20,8 +20,9 @@ export default function CategoryScroll({ images, projectTitle }: CategoryScrollP
     const el = scrollRef.current;
     if (!el) return;
     const tolerance = 2;
-    setCanScrollLeft(el.scrollLeft > tolerance);
-    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - tolerance);
+    const sl = Math.abs(el.scrollLeft);
+    setCanScrollLeft(sl > tolerance);
+    setCanScrollRight(sl < el.scrollWidth - el.clientWidth - tolerance);
     setFitsInView(el.scrollWidth <= el.clientWidth + tolerance);
   }, []);
 
@@ -62,11 +63,11 @@ export default function CategoryScroll({ images, projectTitle }: CategoryScrollP
   const scrollAmount = 240;
 
   const scrollPrev = () => {
-    scrollRef.current?.scrollBy({ left: isRTL ? scrollAmount : -scrollAmount, behavior: 'smooth' });
+    scrollRef.current?.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
   };
 
   const scrollNext = () => {
-    scrollRef.current?.scrollBy({ left: isRTL ? -scrollAmount : scrollAmount, behavior: 'smooth' });
+    scrollRef.current?.scrollBy({ left: scrollAmount, behavior: 'smooth' });
   };
 
   const showLeftArrow = isRTL ? canScrollRight : canScrollLeft;
