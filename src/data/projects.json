@@ -244,5 +244,30 @@
       "images/5198.jpg",
       "images/5184.jpg"
     ]
+  },
+  {
+    "slug": "golden-hour-glow",
+    "title": "Golden Hour Glow",
+    "title_he": "זוהר שעת הזהב",
+    "category": "Portrait",
+    "category_he": "דיוקן",
+    "description": "A radiant portrait series showcasing the artistry of professional makeup and carefully sculpted studio lighting. Every detail — from flawless skin tones to dramatic contours — is brought to life through a seamless collaboration between photographer and makeup artist, resulting in images that glow with polished elegance.",
+    "description_he": "סדרת דיוקנאות זוהרת המציגה את האומנות של איפור מקצועי ותאורת סטודיו מפוסלת בקפידה. כל פרט — מגווני עור מושלמים ועד קונטורים דרמטיים — מקבל חיים דרך שיתוף פעולה חלק בין הצלם לאמנית האיפור, והתוצאה היא תמונות הקורנות באלגנטיות מלוטשת.",
+    "coverImage": "images/0066.jpg",
+    "images": [
+      "images/0073.jpg",
+      "images/0116.jpg",
+      "images/0134.jpg",
+      "images/0151.jpg",
+      "images/0201.jpg",
+      "images/0215.jpg",
+      "images/0232.jpg",
+      "images/0235.jpg",
+      "images/0291.jpg",
+      "images/0299.jpg",
+      "images/0306.jpg",
+      "images/0312.jpg",
+      "images/0326.jpg"
+    ]
   }
 ]
