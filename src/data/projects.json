@@ -269,5 +269,36 @@
       "images/0312.jpg",
       "images/0326.jpg"
     ]
+  },
+  {
+    "slug": "ivory-and-crimson",
+    "title": "Ivory & Crimson",
+    "title_he": "שנהב וארגמן",
+    "category": "Portrait",
+    "category_he": "דיוקן",
+    "description": "An elegant studio portrait series pairing flowing white lace with rich crimson satin against deep, dark backdrops. Dramatic lighting sculpts every fold and contour, celebrating timeless grace and the striking interplay of contrast and color.",
+    "description_he": "סדרת דיוקנאות סטודיו אלגנטית המשלבת תחרה לבנה זורמת עם סאטן ארגמני עשיר על רקע כהה ועמוק. תאורה דרמטית מגלפת כל קפל וקו מתאר, חוגגת חן נצחי ואת משחק הגומלין המרשים בין ניגודיות לצבע.",
+    "coverImage": "images/3044.jpg",
+    "images": [
+      "images/2333.jpg",
+      "images/2612.jpg",
+      "images/2632.jpg",
+      "images/2651.jpg",
+      "images/2727.jpg",
+      "images/2742.jpg",
+      "images/2825.jpg",
+      "images/2863.jpg",
+      "images/2875.jpg",
+      "images/2894.jpg",
+      "images/2896.jpg",
+      "images/2928.jpg",
+      "images/2950.jpg",
+      "images/2968.jpg",
+      "images/2993.jpg",
+      "images/3013.jpg",
+      "images/3045.jpg",
+      "images/3098.jpg",
+      "images/3192.jpg"
+    ]
   }
 ]
