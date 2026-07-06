@@ -18,6 +18,7 @@ export default function Navbar() {
 
   const navLinks = [
     { to: '/', label: t.nav.gallery },
+    { to: '/projects', label: t.nav.projects },
     { to: '/about', label: t.nav.about },
     { to: '/contact', label: t.nav.contact },
   ];

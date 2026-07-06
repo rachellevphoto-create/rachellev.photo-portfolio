@@ -2,18 +2,23 @@
   "en": {
     "nav": {
       "gallery": "Gallery",
+      "projects": "Projects",
       "about": "About",
       "contact": "Contact",
       "brand": "Portfolio"
     },
+    "gallery": {
+      "title": "Gallery",
+      "subtitle": "A collection of moments, captured and gathered in one place."
+    },
     "home": {
-      "title": "Selected Works",
+      "title": "Projects",
       "subtitle": "A curated collection of projects exploring light, form, and narrative."
     },
     "project": {
       "notFoundTitle": "Project Not Found",
-      "notFoundLink": "Return to Gallery",
-      "backToGallery": "Back to Gallery",
+      "notFoundLink": "Return to Projects",
+      "backToGallery": "Back to Projects",
       "moreProjects": "More Projects",
       "moreFromCategory": "More From This Project",
       "moreImages": "More images"
@@ -38,18 +43,23 @@
   "he": {
     "nav": {
       "gallery": "גלריה",
+      "projects": "פרויקטים",
       "about": "אודות",
       "contact": "צור קשר",
       "brand": "פורטפוליו"
     },
+    "gallery": {
+      "title": "גלריה",
+      "subtitle": "אוסף של רגעים, שנלכדו ונאספו למקום אחד."
+    },
     "home": {
-      "title": "עבודות נבחרות",
+      "title": "פרויקטים",
       "subtitle": "אוסף מאוצר של פרויקטים החוקרים אור, צורה וסיפור."
     },
     "project": {
       "notFoundTitle": "הפרויקט לא נמצא",
-      "notFoundLink": "חזרה לגלריה",
-      "backToGallery": "חזרה לגלריה",
+      "notFoundLink": "חזרה לפרויקטים",
+      "backToGallery": "חזרה לפרויקטים",
       "moreProjects": "פרויקטים נוספים",
       "moreFromCategory": "עוד מהפרויקט הזה",
       "moreImages": "עוד תמונות"

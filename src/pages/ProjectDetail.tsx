@@ -35,7 +35,7 @@ export default function ProjectDetail() {
       <div className="flex min-h-[60vh] items-center justify-center">
         <div className="text-center">
           <h1 className="font-serif text-3xl text-teal-dark dark:text-offwhite">{t.project.notFoundTitle}</h1>
-          <Link to="/" className="mt-4 inline-block text-coral transition-colors hover:text-coral-light">
+          <Link to="/projects" className="mt-4 inline-block text-coral transition-colors hover:text-coral-light">
             {t.project.notFoundLink}
           </Link>
         </div>
@@ -52,7 +52,7 @@ export default function ProjectDetail() {
     >
       <div className="mx-auto max-w-5xl px-6 md:px-10">
         <Link
-          to="/"
+          to="/projects"
           className="mb-10 inline-flex items-center gap-2 text-sm font-medium uppercase tracking-widest text-gray-warm transition-colors hover:text-teal dark:hover:text-coral"
         >
           <BackArrow size={16} />

@@ -6,6 +6,7 @@ import { ThemeProvider } from './i18n/ThemeContext';
 import Layout from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
 
+const Gallery = lazy(() => import('./pages/Gallery'));
 const Home = lazy(() => import('./pages/Home'));
 const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
 const About = lazy(() => import('./pages/About'));
@@ -27,7 +28,8 @@ function AnimatedRoutes() {
       <Suspense fallback={<PageLoader />}>
         <Routes location={location} key={location.pathname}>
           <Route element={<Layout />}>
-            <Route index element={<Home />} />
+            <Route index element={<Gallery />} />
+            <Route path="projects" element={<Home />} />
             <Route path="project/:slug" element={<ProjectDetail />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
