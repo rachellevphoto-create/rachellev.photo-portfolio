@@ -300,5 +300,41 @@
       "images/3098.jpg",
       "images/3192.jpg"
     ]
+  },
+  {
+    "slug": "brand-stories",
+    "title": "Brand Stories",
+    "title_he": "סיפורי מותג",
+    "category": "Branding",
+    "category_he": "מיתוג",
+    "description": "A polished branding session translating personality and professionalism into a cohesive visual identity. Thoughtful styling, confident poses, and clean composition combine to tell a brand's story across a versatile set of frames.",
+    "description_he": "סשן מיתוג מלוטש המתרגם אישיות ומקצועיות לזהות ויזואלית אחידה. סטיילינג מוקפד, פוזות בטוחות וקומפוזיציה נקייה מתחברים יחד כדי לספר את סיפור המותג במגוון פריימים רב-תכליתי.",
+    "coverImage": "images/6361 copy.jpg",
+    "images": [
+      "images/6280.jpg",
+      "images/6317.jpg",
+      "images/6330.jpg",
+      "images/6352.jpg",
+      "images/6385.jpg",
+      "images/6434 copy.jpg",
+      "images/6444.jpg",
+      "images/6461.jpg",
+      "images/6483.jpg",
+      "images/6495 copy.jpg",
+      "images/6498.jpg",
+      "images/6518.jpg",
+      "images/6552.jpg",
+      "images/6595.jpg",
+      "images/6616.jpg",
+      "images/6628.jpg",
+      "images/6636.jpg",
+      "images/6639.jpg",
+      "images/6662.jpg",
+      "images/6688.jpg",
+      "images/6743.jpg",
+      "images/6750.jpg",
+      "images/6794.jpg",
+      "images/6799.jpg"
+    ]
   }
 ]
