@@ -336,5 +336,37 @@
       "images/6794.jpg",
       "images/6799.jpg"
     ]
+  },
+  {
+    "slug": "bridal-beauty",
+    "title": "Bridal & Beauty",
+    "title_he": "כלה ויופי",
+    "category": "Portrait",
+    "category_he": "דיוקן",
+    "description": "A bridal and beauty portrait series celebrating polished makeup, luminous skin, and elegant styling. From intimate close-ups to sweeping gown portraits at golden hour, each frame captures the refined artistry of a complete bridal look.",
+    "description_he": "סדרת דיוקני כלה ויופי החוגגת איפור מלוטש, עור זוהר וסטיילינג אלגנטי. מתקריבים אינטימיים ועד דיוקנאות שמלה מרהיבים בשעת הזהב — כל פריים לוכד את האומנות המעודנת של לוק כלות שלם.",
+    "coverImage": "images/5991.jpg",
+    "images": [
+      "images/5569.jpg",
+      "images/5600.jpg",
+      "images/5604.jpg",
+      "images/5621.jpg",
+      "images/5716.jpg",
+      "images/5733.jpg",
+      "images/5748.jpg",
+      "images/5762.jpg",
+      "images/5817.jpg",
+      "images/5845.jpg",
+      "images/5862.jpg",
+      "images/5875.jpg",
+      "images/5885.jpg",
+      "images/5928.jpg",
+      "images/5947.jpg",
+      "images/5985.jpg",
+      "images/6001.jpg",
+      "images/6026.jpg",
+      "images/6057.jpg",
+      "images/6078.jpg"
+    ]
   }
 ]
