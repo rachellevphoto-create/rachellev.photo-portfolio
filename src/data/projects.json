@@ -472,5 +472,22 @@
       "images/1V0A9938 copy_small.jpg",
       "images/1V0A9992_small.jpg"
     ]
+  },
+  {
+    "slug": "little-gentleman",
+    "title": "Little Gentleman",
+    "title_he": "ג'נטלמן קטן",
+    "category": "Portrait",
+    "category_he": "דיוקן",
+    "description": "An outdoor portrait series for a young boy in tailored grey and sage-green looks. Soft golden light, natural stone and greenery, and playful, candid moments capture childhood spirit within polished, classic styling.",
+    "description_he": "סדרת דיוקנאות בחוץ לילד בלוקים מחויטים באפור וירוק-מרווה. אור זהוב רך, אבן טבעית וצמחייה, ורגעים שובבים וקנדידים לוכדים את רוח הילדות בתוך סטיילינג קלאסי ומלוטש.",
+    "coverImage": "images/6916.jpg",
+    "images": [
+      "images/7028.jpg",
+      "images/7034.jpg",
+      "images/7102.jpg",
+      "images/7120.jpg",
+      "images/7320.jpg"
+    ]
   }
 ]
