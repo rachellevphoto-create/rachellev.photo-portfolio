@@ -12,7 +12,7 @@ export interface ServiceItem {
 
 export interface Translations {
   nav: { gallery: string; projects: string; services: string; about: string; contact: string; brand: string; menu: string };
-  gallery: { title: string; subtitle: string };
+  gallery: { title: string; subtitle: string; all: string };
   home: { title: string; subtitle: string };
   project: { notFoundTitle: string; notFoundLink: string; backToGallery: string; moreProjects: string; moreFromCategory: string; moreImages: string };
   about: { title: string; bio: string[]; approachTitle: string; approach: string[]; whatTitle: string; cta: string };

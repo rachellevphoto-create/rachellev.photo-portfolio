@@ -2,6 +2,8 @@ import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import type { Photo } from '../data/images';
+import { photoAlt } from '../data/projects';
+import { useLang } from '../i18n/LanguageContext';
 import ScrollFadeIn from './ScrollFadeIn';
 
 interface GalleryMasonryProps {
@@ -53,6 +55,11 @@ function distributeToColumns(
 
 export default function GalleryMasonry({ images }: GalleryMasonryProps) {
   const columnCount = useSyncExternalStore(subscribeResize, getColumnCount);
+  const { lang, t } = useLang();
+  const altFor = (img: Photo) => {
+    const alt = photoAlt(img.key, lang);
+    return alt ? `${alt} | ${t.nav.brand}` : t.nav.brand;
+  };
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const columnData = useMemo(
@@ -88,7 +95,7 @@ export default function GalleryMasonry({ images }: GalleryMasonryProps) {
       <button
         onClick={() => setLightboxIndex(index)}
         className="group block w-full cursor-pointer overflow-hidden rounded-sm border-0 bg-transparent p-0"
-        aria-label="Open image"
+        aria-label={altFor(images[index])}
       >
         <motion.img
           src={images[index].thumb}
@@ -96,7 +103,7 @@ export default function GalleryMasonry({ images }: GalleryMasonryProps) {
           sizes="(min-width: 1536px) 20vw, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
           width={images[index].width}
           height={images[index].height}
-          alt=""
+          alt={altFor(images[index])}
           loading="lazy"
           decoding="async"
           className="w-full object-cover"
@@ -170,7 +177,7 @@ export default function GalleryMasonry({ images }: GalleryMasonryProps) {
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.2 }}
               src={images[lightboxIndex].large}
-              alt=""
+              alt={altFor(images[lightboxIndex])}
               className="max-h-[85vh] max-w-[90vw] rounded-sm object-contain"
               onClick={(e) => e.stopPropagation()}
             />

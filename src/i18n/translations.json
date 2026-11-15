@@ -11,7 +11,8 @@
     },
     "gallery": {
       "title": "Gallery",
-      "subtitle": "A collection of moments, captured and gathered in one place."
+      "subtitle": "A collection of moments, captured and gathered in one place.",
+      "all": "All"
     },
     "home": {
       "title": "Projects",
@@ -150,7 +151,8 @@
     },
     "gallery": {
       "title": "גלריה",
-      "subtitle": "אוסף של רגעים, שנלכדו ונאספו למקום אחד."
+      "subtitle": "אוסף של רגעים, שנלכדו ונאספו למקום אחד.",
+      "all": "הכול"
     },
     "home": {
       "title": "פרויקטים",
