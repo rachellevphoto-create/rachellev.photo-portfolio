@@ -489,5 +489,22 @@
       "images/7120.jpg",
       "images/7320.jpg"
     ]
+  },
+  {
+    "slug": "watermelon-summer",
+    "title": "Watermelon Summer",
+    "title_he": "קיץ של אבטיח",
+    "category": "Portrait",
+    "category_he": "דיוקן",
+    "description": "Two sisters on a warm summer evening by the water. Red headbands, sweet watermelon and soft golden light come together in playful, tender portraits full of childhood joy and the bond between sisters.",
+    "description_he": "שתי אחיות בערב קיץ חמים על שפת המים. סרטים אדומים, אבטיח מתוק ואור זהוב ורך נפגשים בדיוקנאות שובבים ועדינים, מלאי שמחת ילדות וקשר של אחיות.",
+    "coverImage": "images/1500.jpg",
+    "images": [
+      "images/1547.jpg",
+      "images/0552.jpg",
+      "images/1559.jpg",
+      "images/1699.jpg",
+      "images/1725.jpg"
+    ]
   }
 ]
