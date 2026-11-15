@@ -2,9 +2,10 @@ import { useRef, useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useLang } from '../i18n/LanguageContext';
+import type { Photo } from '../data/images';
 
 interface CategoryScrollProps {
-  images: string[];
+  images: Photo[];
   projectTitle: string;
 }
 
@@ -114,7 +115,10 @@ export default function CategoryScroll({ images, projectTitle }: CategoryScrollP
                 style={{ height: 240, maxHeight: 240 }}
               >
                 <img
-                  src={src}
+                  src={src.thumb}
+                  width={src.width}
+                  height={src.height}
+                  decoding="async"
                   alt={`${projectTitle} ${i + 1}`}
                   loading="lazy"
                   style={{ height: 240, width: 'auto', objectFit: 'cover' }}
@@ -170,7 +174,7 @@ export default function CategoryScroll({ images, projectTitle }: CategoryScrollP
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.2 }}
-              src={images[lightboxIndex]}
+              src={images[lightboxIndex].large}
               alt={`${projectTitle} ${lightboxIndex + 1}`}
               className="max-h-[85vh] max-w-[90vw] rounded-sm object-contain"
               onClick={(e) => e.stopPropagation()}

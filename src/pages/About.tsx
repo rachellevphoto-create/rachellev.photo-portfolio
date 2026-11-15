@@ -1,9 +1,13 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ScrollFadeIn from '../components/ScrollFadeIn';
+import Testimonials from '../components/Testimonials';
 import { useLang } from '../i18n/LanguageContext';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 export default function About() {
   const { t } = useLang();
+  usePageTitle(t.about.title);
 
   return (
     <motion.div
@@ -19,23 +23,53 @@ export default function About() {
           </h1>
         </ScrollFadeIn>
 
-        <ScrollFadeIn delay={0.1}>
-          <div className="mx-auto mt-12 flex justify-center">
-            <img
-              src="https://picsum.photos/seed/photographer/400/500"
-              alt="Photographer portrait"
-              className="w-full max-w-sm rounded-sm object-cover"
-            />
-          </div>
-        </ScrollFadeIn>
-
         <ScrollFadeIn delay={0.2}>
-          <div className="mt-12 space-y-6 text-center text-base leading-relaxed text-gray-warm md:text-lg">
+          <div className="mt-12 space-y-6 text-center font-serif text-lg italic leading-relaxed text-teal-dark dark:text-offwhite md:text-xl">
             {t.about.bio.map((paragraph, i) => (
               <p key={i}>{paragraph}</p>
             ))}
           </div>
         </ScrollFadeIn>
+
+        <ScrollFadeIn>
+          <h2 className="mt-20 text-center font-serif text-3xl font-medium text-teal-dark dark:text-offwhite">
+            {t.about.approachTitle}
+          </h2>
+          <div className="mt-8 space-y-5 text-base leading-relaxed text-gray-warm md:text-lg">
+            {t.about.approach.map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
+          </div>
+        </ScrollFadeIn>
+
+        <ScrollFadeIn>
+          <h2 className="mt-20 text-center font-serif text-3xl font-medium text-teal-dark dark:text-offwhite">
+            {t.about.whatTitle}
+          </h2>
+          <ul className="mt-8 flex flex-wrap justify-center gap-3">
+            {t.services.items.map((item) => (
+              <li key={item.id}>
+                <Link
+                  to={`/project/${item.project}`}
+                  className="inline-block rounded-full border border-gray-light px-5 py-2 text-sm text-teal transition-colors hover:border-coral hover:text-coral dark:border-surface-dark dark:text-gray-light"
+                >
+                  {item.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </ScrollFadeIn>
+      </div>
+
+      <Testimonials />
+
+      <div className="mt-20 text-center">
+        <Link
+          to="/contact"
+          className="inline-block rounded-full bg-coral px-8 py-3 text-sm font-medium uppercase tracking-widest text-white transition-colors hover:bg-coral-light"
+        >
+          {t.about.cta}
+        </Link>
       </div>
     </motion.div>
   );

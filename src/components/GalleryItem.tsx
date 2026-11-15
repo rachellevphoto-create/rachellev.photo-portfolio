@@ -16,9 +16,14 @@ export default function GalleryItem({ project, index }: GalleryItemProps) {
       <Link to={`/project/${project.slug}`} className="group block">
         <div className="overflow-hidden rounded-sm">
           <motion.img
-            src={project.coverImage}
+            src={project.coverImage.thumb}
+            srcSet={project.coverImage.srcSet || undefined}
+            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+            width={project.coverImage.width}
+            height={project.coverImage.height}
             alt={project.title}
             loading="lazy"
+            decoding="async"
             className="w-full object-cover"
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.4, ease: 'easeOut' }}

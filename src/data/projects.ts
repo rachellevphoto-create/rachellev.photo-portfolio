@@ -1,5 +1,6 @@
 import projectsData from './projects.json';
 import type { Lang } from '../i18n/translations';
+import { photo, type Photo } from './images';
 
 export interface ProjectRaw {
   slug: string;
@@ -18,23 +19,25 @@ export interface Project {
   title: string;
   category: string;
   description: string;
-  coverImage: string;
-  images: string[];
+  coverImage: Photo;
+  images: Photo[];
 }
 
 export const projectsRaw: ProjectRaw[] = projectsData;
 
-function resolveImageUrl(src: string): string {
-  return src.startsWith('http') ? src : `${import.meta.env.BASE_URL}${src}`;
-}
+const cache = new Map<Lang, Project[]>();
 
 export function getLocalizedProjects(lang: Lang): Project[] {
-  return projectsRaw.map((p) => ({
+  const hit = cache.get(lang);
+  if (hit) return hit;
+  const list = projectsRaw.map((p) => ({
     slug: p.slug,
     title: lang === 'he' ? p.title_he : p.title,
     category: lang === 'he' ? p.category_he : p.category,
     description: lang === 'he' ? p.description_he : p.description,
-    coverImage: resolveImageUrl(p.coverImage),
-    images: p.images.map(resolveImageUrl),
+    coverImage: photo(p.coverImage),
+    images: p.images.map(photo),
   }));
+  cache.set(lang, list);
+  return list;
 }

@@ -3,8 +3,7 @@ import { Mail, Phone, MessageCircle, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useLang } from '../i18n/LanguageContext';
 
-const PHONE = '+972-55-672-0636';
-const EMAIL = 'rachellev.photo@gmail.com';
+import { EMAIL, PHONE_DISPLAY as PHONE, PHONE_TEL } from '../data/site';
 
 interface FabItemProps {
   href: string;
@@ -71,7 +70,7 @@ export default function FloatingContact() {
   const isRTL = lang === 'he';
 
   const items = [
-    { href: `tel:${PHONE.replace(/-/g, '')}`, icon: <Phone size={20} />, label: PHONE },
+    { href: `tel:${PHONE_TEL}`, icon: <Phone size={20} />, label: PHONE },
     { href: `mailto:${EMAIL}`, icon: <Mail size={20} />, label: EMAIL },
   ];
 

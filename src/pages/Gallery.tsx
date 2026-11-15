@@ -2,9 +2,11 @@ import { motion } from 'framer-motion';
 import GalleryMasonry from '../components/GalleryMasonry';
 import { galleryImages } from '../data/galleryImages';
 import { useLang } from '../i18n/LanguageContext';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 export default function Gallery() {
   const { t } = useLang();
+  usePageTitle();
 
   return (
     <motion.div

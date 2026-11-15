@@ -6,6 +6,7 @@ import { getLocalizedProjects } from '../data/projects';
 import MasonryGrid from '../components/MasonryGrid';
 import CategoryScroll from '../components/CategoryScroll';
 import { useLang } from '../i18n/LanguageContext';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 export default function ProjectDetail() {
   const { slug } = useParams<{ slug: string }>();
@@ -14,6 +15,7 @@ export default function ProjectDetail() {
   const project = projects.find((p) => p.slug === slug);
   const otherProjects = projects.filter((p) => p.slug !== slug);
   const [showCoverLightbox, setShowCoverLightbox] = useState(false);
+  usePageTitle(project?.title ?? t.project.notFoundTitle);
 
   useEffect(() => {
     if (!showCoverLightbox) return;
@@ -61,7 +63,9 @@ export default function ProjectDetail() {
 
         <div className="overflow-hidden rounded-sm">
           <img
-            src={project.coverImage}
+            src={project.coverImage.large}
+            width={project.coverImage.width}
+            height={project.coverImage.height}
             alt={project.title}
             className="mx-auto w-full max-w-4xl cursor-pointer object-cover transition-transform duration-300 hover:scale-[1.02]"
             onClick={() => setShowCoverLightbox(true)}
@@ -117,7 +121,7 @@ export default function ProjectDetail() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.2 }}
-              src={project.coverImage}
+              src={project.coverImage.large}
               alt={project.title}
               className="max-h-[85vh] max-w-[90vw] rounded-sm object-contain"
               onClick={(e) => e.stopPropagation()}

@@ -1,7 +1,5 @@
 import { useMemo, useSyncExternalStore } from 'react';
 import type { Project } from '../data/projects';
-import type { ImageDimensions } from '../hooks/useImageDimensions';
-import { useImageDimensions } from '../hooks/useImageDimensions';
 import GalleryItem from './GalleryItem';
 
 interface MasonryGridProps {
@@ -26,7 +24,6 @@ function subscribeResize(cb: () => void) {
 
 function distributeToColumns(
   projects: Project[],
-  dimensions: Map<string, ImageDimensions>,
   columnCount: number,
 ): Project[][] {
   if (columnCount <= 1) return [projects];
@@ -37,8 +34,8 @@ function distributeToColumns(
   );
 
   for (const project of projects) {
-    const dim = dimensions.get(project.coverImage);
-    const aspectRatio = dim ? dim.width / dim.height : 3 / 4;
+    const { width, height } = project.coverImage;
+    const aspectRatio = width && height ? width / height : 3 / 4;
     const estimatedHeight = 1 / aspectRatio;
 
     const shortest = columns.reduce((min, col) =>
@@ -54,29 +51,10 @@ function distributeToColumns(
 export default function MasonryGrid({ projects }: MasonryGridProps) {
   const columnCount = useSyncExternalStore(subscribeResize, getColumnCount);
 
-  const coverUrls = useMemo(
-    () => projects.map((p) => p.coverImage),
-    [projects],
-  );
-
-  const { dimensions, loaded } = useImageDimensions(coverUrls);
-
   const columnData = useMemo(
-    () => distributeToColumns(projects, dimensions, columnCount),
-    [projects, dimensions, columnCount],
+    () => distributeToColumns(projects, columnCount),
+    [projects, columnCount],
   );
-
-  if (!loaded) {
-    return (
-      <div className="mx-auto max-w-6xl px-6 md:px-10">
-        <div className="columns-1 gap-8 sm:columns-2 lg:columns-3">
-          {projects.map((project, i) => (
-            <GalleryItem key={project.slug} project={project} index={i} />
-          ))}
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="mx-auto max-w-6xl px-6 md:px-10">

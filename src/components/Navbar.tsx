@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Languages, Moon, Sun } from 'lucide-react';
+import { Languages, Menu, Moon, Sun, X } from 'lucide-react';
 import { useLang } from '../i18n/LanguageContext';
 import { useTheme } from '../i18n/ThemeContext';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const { lang, t, toggleLang } = useLang();
   const { theme, toggleTheme } = useTheme();
@@ -16,9 +17,13 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  // Close the phone menu when the page changes.
+  useEffect(() => setMenuOpen(false), [location.pathname]);
+
   const navLinks = [
     { to: '/', label: t.nav.gallery },
     { to: '/projects', label: t.nav.projects },
+    { to: '/services', label: t.nav.services },
     { to: '/about', label: t.nav.about },
     { to: '/contact', label: t.nav.contact },
   ];
@@ -26,7 +31,9 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+        menuOpen
+          ? 'bg-white shadow-sm dark:bg-bg-dark dark:border-b dark:border-surface-dark'
+          : scrolled
           ? 'bg-white/90 backdrop-blur-md shadow-sm dark:bg-bg-dark/90 dark:shadow-none dark:border-b dark:border-surface-dark'
           : 'bg-transparent'
       }`}
@@ -41,7 +48,7 @@ export default function Navbar() {
         </Link>
 
         <div className="flex items-center gap-3 md:gap-6">
-          <ul className="flex items-center gap-4 md:gap-8">
+          <ul className="hidden items-center gap-6 lg:flex lg:gap-8">
             {navLinks.map(({ to, label }) => (
               <li key={to}>
                 <Link
@@ -74,8 +81,34 @@ export default function Navbar() {
             <Languages size={14} />
             {lang === 'en' ? 'עב' : 'EN'}
           </button>
+
+          <button
+            onClick={() => setMenuOpen((v) => !v)}
+            className="flex h-9 w-9 items-center justify-center text-teal transition-colors hover:text-coral dark:text-gray-light lg:hidden"
+            aria-label={t.nav.menu}
+            aria-expanded={menuOpen}
+          >
+            {menuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
         </div>
       </nav>
+
+      {menuOpen && (
+        <ul className="border-t border-gray-light px-6 pb-6 pt-2 dark:border-surface-dark lg:hidden">
+          {navLinks.map(({ to, label }) => (
+            <li key={to}>
+              <Link
+                to={to}
+                className={`block py-3 text-base font-medium uppercase tracking-widest ${
+                  location.pathname === to ? 'text-coral' : 'text-teal dark:text-gray-light'
+                }`}
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
     </header>
   );
 }

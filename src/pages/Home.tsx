@@ -3,10 +3,12 @@ import { getLocalizedProjects } from '../data/projects';
 import MasonryGrid from '../components/MasonryGrid';
 import HeroSlideshow from '../components/HeroSlideshow';
 import { useLang } from '../i18n/LanguageContext';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 export default function Home() {
   const { lang, t } = useLang();
   const projects = getLocalizedProjects(lang);
+  usePageTitle(t.home.title);
 
   return (
     <motion.div

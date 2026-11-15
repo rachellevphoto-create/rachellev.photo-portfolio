@@ -1,4 +1,5 @@
 import { projectsRaw } from './projects';
+import { photo, type Photo } from './images';
 
 // Gather every image referenced by the projects (cover + gallery images),
 // de-duplicated while preserving first-seen order.
@@ -41,8 +42,4 @@ function constantShuffle<T>(input: T[]): T[] {
   return arr;
 }
 
-function resolveImageUrl(src: string): string {
-  return src.startsWith('http') ? src : `${import.meta.env.BASE_URL}${src}`;
-}
-
-export const galleryImages: string[] = constantShuffle(files).map(resolveImageUrl);
+export const galleryImages: Photo[] = constantShuffle(files).map(photo);

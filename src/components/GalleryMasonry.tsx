@@ -1,12 +1,11 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
-import type { ImageDimensions } from '../hooks/useImageDimensions';
-import { useImageDimensions } from '../hooks/useImageDimensions';
+import type { Photo } from '../data/images';
 import ScrollFadeIn from './ScrollFadeIn';
 
 interface GalleryMasonryProps {
-  images: string[];
+  images: Photo[];
 }
 
 const SM = 640;
@@ -28,8 +27,7 @@ function subscribeResize(cb: () => void) {
 }
 
 function distributeToColumns(
-  images: string[],
-  dimensions: Map<string, ImageDimensions>,
+  images: Photo[],
   columnCount: number,
 ): number[][] {
   if (columnCount <= 1) return [images.map((_, i) => i)];
@@ -39,9 +37,8 @@ function distributeToColumns(
     () => ({ items: [], height: 0 }),
   );
 
-  images.forEach((src, i) => {
-    const dim = dimensions.get(src);
-    const aspectRatio = dim ? dim.width / dim.height : 3 / 4;
+  images.forEach((img, i) => {
+    const aspectRatio = img.width && img.height ? img.width / img.height : 3 / 4;
     const estimatedHeight = 1 / aspectRatio;
 
     const shortest = columns.reduce((min, col) =>
@@ -56,12 +53,11 @@ function distributeToColumns(
 
 export default function GalleryMasonry({ images }: GalleryMasonryProps) {
   const columnCount = useSyncExternalStore(subscribeResize, getColumnCount);
-  const { dimensions, loaded } = useImageDimensions(images);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const columnData = useMemo(
-    () => distributeToColumns(images, dimensions, columnCount),
-    [images, dimensions, columnCount],
+    () => distributeToColumns(images, columnCount),
+    [images, columnCount],
   );
 
   useEffect(() => {
@@ -85,7 +81,7 @@ export default function GalleryMasonry({ images }: GalleryMasonryProps) {
 
   const renderItem = (index: number, position: number) => (
     <ScrollFadeIn
-      key={images[index]}
+      key={images[index].key}
       delay={Math.min(position, 6) * 0.06}
       className="mb-8 break-inside-avoid"
     >
@@ -95,9 +91,14 @@ export default function GalleryMasonry({ images }: GalleryMasonryProps) {
         aria-label="Open image"
       >
         <motion.img
-          src={images[index]}
+          src={images[index].thumb}
+          srcSet={images[index].srcSet || undefined}
+          sizes="(min-width: 1536px) 20vw, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+          width={images[index].width}
+          height={images[index].height}
           alt=""
           loading="lazy"
+          decoding="async"
           className="w-full object-cover"
           whileHover={{ scale: 1.03 }}
           transition={{ duration: 0.4, ease: 'easeOut' }}
@@ -109,19 +110,13 @@ export default function GalleryMasonry({ images }: GalleryMasonryProps) {
   return (
     <>
       <div className="mx-auto max-w-6xl px-6 md:px-10 2xl:max-w-[100rem]">
-        {loaded ? (
-          <div className="flex gap-8">
-            {columnData.map((colItems, ci) => (
-              <div key={ci} className="min-w-0 flex-1">
-                {colItems.map((index, i) => renderItem(index, i))}
-              </div>
-            ))}
-          </div>
-        ) : (
-          <div className="columns-1 gap-8 sm:columns-2 lg:columns-3 2xl:columns-5">
-            {images.map((_, i) => renderItem(i, i))}
-          </div>
-        )}
+        <div className="flex gap-8">
+          {columnData.map((colItems, ci) => (
+            <div key={ci} className="min-w-0 flex-1">
+              {colItems.map((index, i) => renderItem(index, i))}
+            </div>
+          ))}
+        </div>
       </div>
 
       <AnimatePresence>
@@ -174,7 +169,7 @@ export default function GalleryMasonry({ images }: GalleryMasonryProps) {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.2 }}
-              src={images[lightboxIndex]}
+              src={images[lightboxIndex].large}
               alt=""
               className="max-h-[85vh] max-w-[90vw] rounded-sm object-contain"
               onClick={(e) => e.stopPropagation()}

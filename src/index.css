@@ -14,8 +14,8 @@
   --color-surface-dark: #1a1f2e;
   --color-bg-dark: #0f1319;
 
-  --font-serif: "Playfair Display", Georgia, serif;
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", "Frank Ruhl Libre", Georgia, serif;
+  --font-sans: "Inter", "Heebo", system-ui, -apple-system, sans-serif;
 }
 
 html {

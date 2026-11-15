@@ -5,7 +5,9 @@
       "projects": "Projects",
       "about": "About",
       "contact": "Contact",
-      "brand": "Portfolio"
+      "brand": "Racheli Lev Photography",
+      "services": "Services",
+      "menu": "Menu"
     },
     "gallery": {
       "title": "Gallery",
@@ -28,16 +30,112 @@
       "bio": [
         "I'm Racheli, simply a woman who stands on the sidelines and sees how every person has a story, every person contains entire worlds within them.",
         "And in our world, one person meets another, one world embraces another, and the stories unfold at a pace like no other."
-      ]
+      ],
+      "approachTitle": "How I work",
+      "approach": [
+        "Every shoot starts with a conversation. I want to know who you are, what matters to you, and what story you want to tell.",
+        "During the shoot I keep things calm and relaxed, so you can simply be yourself. I pay close attention to light and to the small details.",
+        "After the shoot I carefully choose and edit the best images, and send them to you ready to print and share."
+      ],
+      "whatTitle": "What I photograph",
+      "cta": "Let's talk about your shoot"
     },
     "contact": {
       "title": "Get in Touch",
-      "subtitle": "Interested in working together? I'd love to hear from you. Reach out through any of the channels below.",
+      "subtitle": "Interested in working together? I'd love to hear from you. Send me a message or reach out directly.",
       "email": "Email",
-      "phone": "Phone"
+      "phone": "Phone",
+      "formTitle": "Send a message",
+      "name": "Your name",
+      "replyEmail": "Your email",
+      "phoneField": "Phone (optional)",
+      "type": "Type of shoot",
+      "typeOther": "Something else",
+      "date": "Preferred date (optional)",
+      "message": "Tell me about your idea",
+      "send": "Send",
+      "note": "This opens your email app with the message ready. Just press send.",
+      "subject": "Photo shoot request",
+      "orDirect": "Or contact me directly"
     },
     "footer": {
-      "rights": "All rights reserved."
+      "rights": "All rights reserved.",
+      "tagline": "Photography that lifts moments",
+      "explore": "Explore",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Services",
+      "subtitle": "Every shoot is planned around you. Here is what I offer.",
+      "items": [
+        {
+          "id": "portrait",
+          "title": "Portraits",
+          "text": "Personal portraits that show who you really are – for yourself, for your family, or for your profile.",
+          "project": "shadows-and-strength"
+        },
+        {
+          "id": "bridal",
+          "title": "Bridal & Beauty",
+          "text": "Calm, elegant images for brides and beauty shoots, with a focus on light and fine details.",
+          "project": "bridal-beauty"
+        },
+        {
+          "id": "kids",
+          "title": "Children",
+          "text": "Relaxed sessions that catch children as they are – curious, playful and real.",
+          "project": "little-gentleman"
+        },
+        {
+          "id": "fashion",
+          "title": "Fashion & Lookbook",
+          "text": "Clean, styled images for collections, catalogs and online stores.",
+          "project": "knit-and-tailored"
+        },
+        {
+          "id": "branding",
+          "title": "Branding for Business",
+          "text": "Photos of you and your business that tell your story on your website and social media.",
+          "project": "branding-photography"
+        },
+        {
+          "id": "art",
+          "title": "Fine Art",
+          "text": "Creative concept shoots with color, movement and imagination.",
+          "project": "painted-in-motion"
+        }
+      ],
+      "seeWork": "See examples",
+      "stepsTitle": "How it works",
+      "steps": [
+        {
+          "title": "We talk",
+          "text": "Tell me what you need. We find the right idea, place and time."
+        },
+        {
+          "title": "We plan",
+          "text": "We choose the look, clothes and location together."
+        },
+        {
+          "title": "We shoot",
+          "text": "A relaxed shoot, at your pace."
+        },
+        {
+          "title": "You get your photos",
+          "text": "Carefully edited photos, ready to print and share."
+        }
+      ],
+      "pricesTitle": "Prices",
+      "pricesText": "Every shoot is different, so the price depends on what you need. Send me a message and I will send you a personal quote.",
+      "cta": "Ask for a quote"
+    },
+    "testimonials": {
+      "title": "Kind words"
+    },
+    "notFound": {
+      "title": "Page not found",
+      "text": "The page you are looking for does not exist.",
+      "back": "Back to the gallery"
     }
   },
   "he": {
@@ -46,7 +144,9 @@
       "projects": "פרויקטים",
       "about": "אודות",
       "contact": "צור קשר",
-      "brand": "פורטפוליו"
+      "brand": "רחלי לב צילום",
+      "services": "שירותים",
+      "menu": "תפריט"
     },
     "gallery": {
       "title": "גלריה",
@@ -69,16 +169,112 @@
       "bio": [
         "אני רחלי, בסך הכל אישה שעומדת מהצד ורואה איך לכל אדם יש סיפור, כל אדם מכיל בתוכו עולמות",
         "ובעולם שלנו, אדם פוגש אדם, עולם חובק עולם, והסיפורים מתגלגלים בקצב שאין שני לו."
-      ]
+      ],
+      "approachTitle": "איך אני עובדת",
+      "approach": [
+        "כל צילום מתחיל בשיחה. חשוב לי להכיר אתכם, להבין מה חשוב לכם ואיזה סיפור אתם רוצים לספר.",
+        "בזמן הצילום האווירה רגועה ונינוחה, כדי שתוכלו פשוט להיות אתם. אני שמה לב לאור ולפרטים הקטנים.",
+        "אחרי הצילום אני בוחרת ומעבדת בקפידה את התמונות הטובות ביותר, ושולחת לכם אותן מוכנות להדפסה ולשיתוף."
+      ],
+      "whatTitle": "מה אני מצלמת",
+      "cta": "בואו נדבר על הצילום שלכם"
     },
     "contact": {
       "title": "צור קשר",
-      "subtitle": "מעוניינים לספר את הסיפור שלכם? אשמח לשמוע מכם. פנו אליי באחד מהערוצים למטה.",
+      "subtitle": "רוצים לספר את הסיפור שלכם? אשמח לשמוע מכם. שלחו הודעה או פנו אליי ישירות.",
       "email": "אימייל",
-      "phone": "טלפון"
+      "phone": "טלפון",
+      "formTitle": "שליחת הודעה",
+      "name": "שם",
+      "replyEmail": "אימייל",
+      "phoneField": "טלפון (לא חובה)",
+      "type": "סוג הצילום",
+      "typeOther": "משהו אחר",
+      "date": "תאריך מועדף (לא חובה)",
+      "message": "ספרו לי על הרעיון שלכם",
+      "send": "שליחה",
+      "note": "הכפתור פותח את תוכנת המייל שלכם עם ההודעה מוכנה. רק ללחוץ שלח.",
+      "subject": "בקשה לצילום",
+      "orDirect": "או פנו אליי ישירות"
     },
     "footer": {
-      "rights": "כל הזכויות שמורות."
+      "rights": "כל הזכויות שמורות.",
+      "tagline": "צילום שממריא רגעים",
+      "explore": "ניווט",
+      "contact": "יצירת קשר"
+    },
+    "services": {
+      "title": "שירותים",
+      "subtitle": "כל צילום מתוכנן סביבכם. אלה הדברים שאני מציעה.",
+      "items": [
+        {
+          "id": "portrait",
+          "title": "דיוקנאות",
+          "text": "דיוקן אישי שמראה מי אתם באמת – בשבילכם, בשביל המשפחה או לפרופיל המקצועי.",
+          "project": "shadows-and-strength"
+        },
+        {
+          "id": "bridal",
+          "title": "כלות ויופי",
+          "text": "תמונות רגועות ואלגנטיות לכלות ולצילומי יופי, עם דגש על אור ופרטים קטנים.",
+          "project": "bridal-beauty"
+        },
+        {
+          "id": "kids",
+          "title": "ילדים",
+          "text": "צילום נינוח שתופס את הילדים כמו שהם – סקרנים, שובבים ואמיתיים.",
+          "project": "little-gentleman"
+        },
+        {
+          "id": "fashion",
+          "title": "אופנה וקטלוג",
+          "text": "תמונות נקיות ומעוצבות לקולקציות, לקטלוגים ולחנויות אונליין.",
+          "project": "knit-and-tailored"
+        },
+        {
+          "id": "branding",
+          "title": "מיתוג לעסקים",
+          "text": "תמונות שלכם ושל העסק שמספרות את הסיפור שלכם באתר וברשתות.",
+          "project": "branding-photography"
+        },
+        {
+          "id": "art",
+          "title": "צילום אמנותי",
+          "text": "צילומי קונספט יצירתיים עם צבע, תנועה ודמיון.",
+          "project": "painted-in-motion"
+        }
+      ],
+      "seeWork": "לדוגמאות",
+      "stepsTitle": "איך זה עובד",
+      "steps": [
+        {
+          "title": "מדברים",
+          "text": "מספרים לי מה אתם צריכים. מוצאים יחד את הרעיון, המקום והזמן."
+        },
+        {
+          "title": "מתכננים",
+          "text": "בוחרים יחד את הסגנון, הבגדים והלוקיישן."
+        },
+        {
+          "title": "מצלמים",
+          "text": "צילום נינוח, בקצב שלכם."
+        },
+        {
+          "title": "מקבלים תמונות",
+          "text": "תמונות ערוכות בקפידה, מוכנות להדפסה ולשיתוף."
+        }
+      ],
+      "pricesTitle": "מחירים",
+      "pricesText": "כל צילום שונה, ולכן המחיר תלוי במה שאתם צריכים. שלחו לי הודעה ואשלח לכם הצעת מחיר אישית.",
+      "cta": "לקבלת הצעת מחיר"
+    },
+    "testimonials": {
+      "title": "מה אומרים עליי"
+    },
+    "notFound": {
+      "title": "העמוד לא נמצא",
+      "text": "העמוד שחיפשתם לא קיים.",
+      "back": "חזרה לגלריה"
     }
   }
 }

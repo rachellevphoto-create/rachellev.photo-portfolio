@@ -34,8 +34,9 @@ export default function HeroSlideshow() {
           >
             <Link to={`/project/${current.slug}`} className="block h-full w-full">
               <img
-                src={current.coverImage}
+                src={current.coverImage.large}
                 alt={current.title}
+                fetchPriority={currentIndex === 0 ? 'high' : 'auto'}
                 className="h-full w-full object-cover"
               />
 
